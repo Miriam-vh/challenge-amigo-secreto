@@ -10,4 +10,10 @@ function agregarAmigo(){
         alert("Por favor ingresa un nombre");
         return;
     }
+
+    if(amigos.includes(nombreAmigo)){
+        alert(`${nombreAmigo} ya esta en la lista, por favor ingresa otro nombre`);
+        return;
+    }
+
 }
