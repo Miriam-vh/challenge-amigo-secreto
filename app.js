@@ -16,8 +16,9 @@ function agregarAmigo(){
         return;
     }
 
-        amigos.push(nombreAmigo);
+    amigos.push(nombreAmigo);
 
+    inputAmigo.ariaValu = "";
     
 
 }
