@@ -31,7 +31,6 @@ function agregarAmigo(){
 
 }
 
-
 //Actualizar la lista de amigos en la interfaz  
 function actualizarLista(){
     const listaAmigos = document.getElementById("listaAmigos");
