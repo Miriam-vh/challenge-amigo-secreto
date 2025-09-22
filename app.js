@@ -6,17 +6,17 @@ let amigos = [];
 //Agregar amigos
 function agregarAmigo(){
     const inputAmigo = document.getElementById("amigo");
-    const nombreAmigo = inputAmigo.ariaValueMax.trim();
+    const nombreAmigo = inputAmigo.value.trim();
 
     //Campo vacio
-    if(nombre === ""){
+    if(nombreAmigo === ""){
         alert("Por favor ingresa un nombre");
         return;
     }
 
     //Nombre duplicado
     if(amigos.includes(nombreAmigo)){
-        alert(`${nombreAmigo} ya esta en la lista, por favor ingresa otro nombre`);
+        alert(`Tu amigo(a) ${nombreAmigo} ya está en la lista`);
         return;
     }
 
@@ -24,7 +24,7 @@ function agregarAmigo(){
     amigos.push(nombreAmigo);
 
     //Limpiar campo de entrada
-    inputAmigo.ariaValu = "";
+    inputAmigo.value = "";
 
     //Actualizar lista
     actualizarLista();
@@ -46,7 +46,7 @@ function actualizarLista(){
 }
 
 //Seleccionar amigo aleatorio
-function sortearAmigo(){
+function sortearAmigo() {
     if(amigos.length === 0){
         alert("No hay amigos disponibles para sortear");
         return;
@@ -61,6 +61,6 @@ function sortearAmigo(){
     //Mostrar el resultado
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
-    
+
 }
 
