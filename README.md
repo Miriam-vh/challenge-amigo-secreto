@@ -4,6 +4,7 @@ Este desafío permite al usuario agregar los nombres de sus amigos en una lista 
 
 ## Para jugar solo debes seguir los siguientes pasos:
 -Ingresa el nombre de tu amigo
+![Ingresa](./assets/sinAmigos.PNG)
 
 -Da click en **Añadir**
 
